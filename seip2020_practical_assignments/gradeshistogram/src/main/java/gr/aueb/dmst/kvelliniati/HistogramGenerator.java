@@ -53,14 +53,14 @@ public class HistogramGenerator {
 		boolean urls = false; // do not visualize urls
 
 		// Declare and initialize a createXYLineChart JFreeChart
-		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+		JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "grade", "number of students", dataset,
 				PlotOrientation.VERTICAL, legend, tooltips, urls);
 
 		/*
 		 * Initialize a frame for visualizing the chart and attach the
 		 * previously created chart.
 		 */
-		ChartFrame frame = new ChartFrame("First", chart);
+		ChartFrame frame = new ChartFrame("Frequency of grades", chart);
 		frame.pack();
 		// makes the previously created frame visible
 		frame.setVisible(true);
