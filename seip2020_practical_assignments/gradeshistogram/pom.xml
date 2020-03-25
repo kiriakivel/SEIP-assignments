@@ -31,43 +31,42 @@
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <configuration>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>gr.aueb.dmst.kvelliniati.HistogramGenerator</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
             <archive>
-              <manifest>
-                  <addClasspath>true</addClasspath>
-                  <mainClass>gr.aueb.dmst.kvelliniati.HistogramGenerator</mainClass>
-              </manifest>
+                <manifest>
+                    <mainClass>gr.aueb.dmst.kvelliniati.HistogramGenerator</mainClass> <!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
+                </manifest>
             </archive>
-          </configuration>
-        </plugin>
-        <plugin>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <configuration>
-              <archive>
-                  <manifest>
-                      <mainClass>gr.aueb.dmst.kvelliniati.HistogramGenerator</mainClass> <!-- replace this with the class that contains the main method. It requires also the package name if exists. -->
-                  </manifest>
-              </archive>
-              <descriptorRefs>
-                  <descriptorRef>jar-with-dependencies</descriptorRef>
-              </descriptorRefs>
-          </configuration>
-          <executions>
-              <execution>
-                  <id>make-assembly</id> <!-- this is used for inheritance merges -->
-                  <phase>package</phase> <!-- bind to the packaging phase -->
-                  <goals>
-                      <goal>single</goal>
-                  </goals>
-              </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+            <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+        </configuration>
+        <executions>
+            <execution>
+                <id>make-assembly</id> <!-- this is used for inheritance merges -->
+                <phase>package</phase> <!-- bind to the packaging phase -->
+                <goals>
+                    <goal>single</goal>
+                </goals>
+            </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
