@@ -48,7 +48,7 @@ Then the application of the chosen assignment will be executed.
 
 ## Module Projects
 
-* [gradeshistogram](https://github.com/kiriakivel/SEIP-assignments/blob/development/seip2020_practical_assignments/gradeshistogram/README.md) - Produces a histogram of grade frequency.
+* [gradeshistogram](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/gradeshistogram/README.md) - Produces a histogram of grade frequency.
 * [unittesting](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/unittesting/README.md) - Mathematical functions and their unit tests.
 
 ## Built With
