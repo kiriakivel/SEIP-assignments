@@ -1,0 +1,27 @@
+language: java #Define the language
+
+jdk: # Define the execution environments
+  -openjdk8
+  -oraclejdk8
+
+branches: # Execute job only on specific branch commits
+  only:
+  -master
+
+sudo: required   # Linux Administrator permissions
+
+before_install: 
+  -sudoapt update # Update the package list
+
+install:
+  -sudoapt install maven –y # Install required packages
+
+before_script: # Perform commands
+  -cd project
+  -ls -la
+
+script: # Build the project
+  -mvnclean package
+
+after_success: # Notify users about the result
+  -echo “Process terminated successfully”
