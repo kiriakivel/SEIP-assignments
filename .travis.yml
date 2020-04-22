@@ -4,10 +4,6 @@ jdk: # Define the execution environments
   -openjdk8
   -oraclejdk8
 
-branches: # Execute job only on specific branch commits
-  only:
-  -master
-
 sudo: required   # Linux Administrator permissions
 
 before_install: 
@@ -21,7 +17,7 @@ before_script: # Perform commands
   -ls -la
 
 script: # Build the project
-  -mvnclean package
+  -mvn clean package
 
 after_success: # Notify users about the result
   -echo “Process terminated successfully”
