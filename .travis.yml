@@ -7,10 +7,10 @@ jdk: # Define the execution environments
 sudo: required   # Linux Administrator permissions
 
 before_install: 
-  -sudoapt update # Update the package list
+  -sudo apt update # Update the package list
 
 install:
-  -sudoapt install maven –y # Install required packages
+  -sudo apt install maven –y # Install required packages
 
 before_script: # Perform commands
   -cd project
