@@ -29,7 +29,7 @@ public class MyMathTest_factorial_Parameterized {
 
 	@Test
 	public void test_factorial() {
-		Assert.assertEquals(result, math.factorial(number))
+		Assert.assertEquals(result, math.factorial(number));
 	}
 	
 }
