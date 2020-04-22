@@ -1,6 +1,6 @@
 # SEIP-assignments
 
-https://travis-ci.com/kiriakivel/SEIP-assignments.svg?token=hVEQWU791o2szb4sxgz7&branch=master
+[![Build Status](https://travis-ci.com/kiriakivel/SEIP-assignments.svg?token=hVEQWU791o2szb4sxgz7&branch=master)](https://travis-ci.com/kiriakivel/SEIP-assignments)
 
 This repository contains the individual lab assignments of Kyriaki Velliniati for the course Software Engineering in Practice.
 
