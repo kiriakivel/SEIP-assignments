@@ -19,7 +19,7 @@ public class MyMath {
 		if (n<0 || n>12) {
 			throw new IllegalArgumentException("The number should be between 1 and 12!");
 		} else {
-			int fct;
+			int fct = 0;
 			for (int i = 1; i <= n; i++) {
 				fct += i;
 			}
