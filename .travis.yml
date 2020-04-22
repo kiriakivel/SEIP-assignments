@@ -13,7 +13,7 @@ install:
   - sudo apt install maven -y # Install required packages
 
 before_script: # Perform commands
-  - cd project
+  - cd seip2020_practical_assignments
   - ls -la
 
 script: # Build the project
