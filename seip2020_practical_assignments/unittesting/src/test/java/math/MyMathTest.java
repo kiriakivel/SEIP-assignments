@@ -3,6 +3,7 @@ package math;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.Rule;
+import org.junit.Assert;
 
 public class MyMathTest {
 
@@ -23,6 +24,23 @@ public class MyMathTest {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The number should be between 1 and 12!");
 		math.factorial(13);
+	}
+
+	@Test
+	public void test_isPrime_normal_case_true() {
+		Assert.assertTrue(math.isPrime(2));
+	}
+
+	@Test
+	public void test_isPrime_normal_case_false() {
+		Assert.assertFalse(math.isPrime(4));
+	}
+
+	@Test
+	public void test_isPrime_less_than_2_RuleException() {
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("Number must be equal or greater than 2.");
+		math.isPrime(1);
 	}
 
 }
