@@ -27,5 +27,26 @@ public class MyMath {
 		}
 
 	}
+
+	/**
+	 * Checks whether the given number n is a prime number.
+	 * @param n the number we want to check for being prime.
+	 * @return isPrime, boolean value indicating primality of n.
+	 * @exception IllegalArgumentException when n is less than 2.
+	 */
+	public boolean isPrime(int n) {
+		if (n>=2) {
+	        boolean flag = false;
+	        for(int i = 2; i <= n/2; ++i){
+	            // condition for nonprime number
+	            if(n % i == 0)
+	            {
+	                return false;
+	            }
+	        }
+		} else
+			throw new IllegalArgumentException("Number must be equal or greater than 2.");
+		return true;	
+	}
 	
 }
