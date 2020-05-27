@@ -38,8 +38,17 @@ public class FileIO {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				int number = Integer.parseInt(line);
-				numbersList.add(number);
+				boolean isInt = true;
+				if(!(line.isEmpty())){
+				    for(int i = 0; i < line.length(); i++){
+				        if((i == 0 && line.charAt(i) == '-' && line.length() < 1) || (Character.digit(line.charAt(i),10) < 0))
+				            isInt = false;
+				    }
+				} else isInt = false;
+				if (isInt) {
+					int number = Integer.parseInt(line);
+					numbersList.add(number);
+				}    				
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
