@@ -9,6 +9,8 @@ Tests are written using the [Junit](https://junit.org/junit4/) framework.
 
 ## Execution Instructions
 
-### Run the main code
-
-### Run the tests
+By executing:
+```
+mvn package
+```
+all tests included in the module will be executed before building the jar.

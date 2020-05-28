@@ -9,6 +9,11 @@ public class ArrayOperationsTest {
 	
 	ArrayOperations aop = new ArrayOperations();
 
+	/*
+	* A unit test that checks that only 
+	* prime numbers of the given file
+	* are returned.
+	*/
 	@Test
 	public void test_findPrimesInFile(){
 

@@ -10,6 +10,12 @@ import org.junit.runner.RunWith;
 import org.junit.Test;
 import org.junit.Assert;
 
+/**
+ * A parameterized test class that checks
+ * the fuctionality of the factorial method
+ *  of the MyMath class.
+ * @author kiriakivel
+ */
 @RunWith(Parameterized.class)
 public class MyMathTest_factorial_Parameterized {
 
