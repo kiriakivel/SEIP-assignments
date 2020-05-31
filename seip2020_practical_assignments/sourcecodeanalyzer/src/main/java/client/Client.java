@@ -3,8 +3,20 @@ package client;
 import codeanalyzer.Facade;
 import java.io.IOException;
 
+/**
+* The Client class initates the functionality
+* of the sourcecodeanalyzer module.
+*
+* @author  kiriakivel 
+*/
 public class Client {
 
+	/**
+	 * Reads the command line arguments and passes them to
+	 * the facade object which then operates the code analysis.
+	 * @param args command line arguments about user preferences
+	 * @exception IOException when there's a problem with the file 
+	 */
 	public static void main(String[] args)throws IOException{
 		String filepath = "src/main/resources/TestClass.java";
 		String sourceCodeAnalyzerType = "regex";

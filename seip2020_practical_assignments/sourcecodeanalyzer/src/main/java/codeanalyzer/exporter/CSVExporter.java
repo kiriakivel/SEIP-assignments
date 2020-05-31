@@ -5,6 +5,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+* The CSVExporter class is used when the
+* selected file type to export the metrics
+* is CSV.
+*
+* @author  kiriakivel 
+*/
 public class CSVExporter implements Exporter{
 
 	public void writeFile(Map<String, Integer> metrics, String filepath) {

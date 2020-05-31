@@ -7,6 +7,13 @@ import java.util.Map;
 import java.util.List;
 import java.io.IOException;
 
+/**
+* The StrCompAnalyzer class is used when the
+* user wants to calculate the metrics by use
+* of String comparison.
+*
+* @author  kiriakivel 
+*/
 public class StrCompAnalyzer implements Analyzer {
 
 	private Reader fileReader;

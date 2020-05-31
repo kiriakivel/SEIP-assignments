@@ -8,6 +8,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.IOException;
 
+/**
+* The RegexAnalyzer class is used when the
+* user wants to calculate the metrics by use
+* of regular expressions.
+*
+* @author  kiriakivel 
+*/
 public class RegexAnalyzer implements Analyzer {
 
 	private Reader fileReader;

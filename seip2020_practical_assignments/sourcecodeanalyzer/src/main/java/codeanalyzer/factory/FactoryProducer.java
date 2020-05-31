@@ -1,5 +1,11 @@
 package codeanalyzer.factory;
 
+/**
+* The FactoryProducer class is used to create
+* a factory object of the specified category.
+*
+* @author  kiriakivel 
+*/
 public class FactoryProducer {
 	
 	public static AbstractFactory getFactory(String factoryType){

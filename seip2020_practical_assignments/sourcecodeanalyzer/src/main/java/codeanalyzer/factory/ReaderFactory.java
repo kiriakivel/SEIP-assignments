@@ -2,6 +2,13 @@ package codeanalyzer.factory;
 
 import codeanalyzer.reader.*;
 
+/**
+* The ReaderFactory class creates an
+* Reader object according to a String,
+* which indicates the Reader type.
+*
+* @author  kiriakivel 
+*/
 public class ReaderFactory implements AbstractFactory<Reader>{
 
 	public Reader create(String type){

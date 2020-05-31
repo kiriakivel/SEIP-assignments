@@ -7,6 +7,12 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+* The LocalReader class is used when the
+* given file is located in a local directory.
+*
+* @author  kiriakivel 
+*/
 public class LocalReader implements Reader{
 
 	public List<String> readFileIntoList(String filepath) throws IOException {

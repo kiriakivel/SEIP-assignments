@@ -7,6 +7,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+* The WebReader class is used when the
+* given file is located in a website.
+*
+* @author  kiriakivel 
+*/
 public class WebReader implements Reader{
 	public List<String> readFileIntoList(String filepath) throws IOException {
         List<String> lines = new ArrayList<>();

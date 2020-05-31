@@ -2,6 +2,13 @@ package codeanalyzer.factory;
 
 import codeanalyzer.analyzer.*;
 
+/**
+* The AnalyzerFactory class creates an
+* Analyzer object according to a String,
+* which indicates the Analyzer type.
+*
+* @author  kiriakivel 
+*/
 public class AnalyzerFactory implements AbstractFactory<Analyzer>{
 
 	public Analyzer create(String type){
