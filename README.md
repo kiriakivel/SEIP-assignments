@@ -1,5 +1,7 @@
 # SEIP-assignments
 
+[![Build Status](https://travis-ci.com/kiriakivel/SEIP-assignments.svg?token=hVEQWU791o2szb4sxgz7&branch=master)](https://travis-ci.com/kiriakivel/SEIP-assignments)
+
 This repository contains the individual lab assignments of Kyriaki Velliniati for the course Software Engineering in Practice.
 
 ## Getting Started
@@ -45,6 +47,11 @@ You can then cd your terminal in the target folder you want and run the command:
 java -jar (name-of-executable).jar
 ```
 Then the application of the chosen assignment will be executed.
+
+## Module Projects
+
+* [gradeshistogram](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/gradeshistogram/README.md) - Produces a histogram of grade frequency.
+* [unittesting](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/unittesting/README.md) - Mathematical functions and their unit tests.
 
 ## Built With
 
