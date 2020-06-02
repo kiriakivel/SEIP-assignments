@@ -52,6 +52,7 @@ Then the application of the chosen assignment will be executed.
 
 * [gradeshistogram](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/gradeshistogram/README.md) - Produces a histogram of grade frequency.
 * [unittesting](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/unittesting/README.md) - Mathematical functions and their unit tests.
+* [sourcecodeanalyzer](https://github.com/kiriakivel/SEIP-assignments/blob/master/seip2020_practical_assignments/sourcecodeanalyzer/README.md) - Reads a Java source file, calculates code metrics and exports them to file.
 
 ## Built With
 
